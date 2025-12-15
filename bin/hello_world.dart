@@ -24,7 +24,7 @@ void main() {
 
   var dogie = dog('chihuahua', 'dog', 2);
 
-  print(dogie.formatt());
+  // print(dogie.formatt());
   print(dogie.format());
 }
 
@@ -49,7 +49,8 @@ class dog extends animals {
 
   dog(this.breed, super.name, super.age);
 
-  String formatt() {
+@override
+  String format() {
     return "The $name is $age years old and is a $breed";
   }
 }
